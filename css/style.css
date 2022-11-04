@@ -1,0 +1,296 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+}
+body{
+    background-color: #000  !important;
+    margin: 0px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+p, a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+section{
+    width: 100%;
+    margin: auto;
+    padding: 4em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    margin: auto;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu nav a.link-menu {
+    margin: 0px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a.link-menu.btn-menu {
+    background: #e99021;
+    padding: 15px 20px;
+    font-weight: 900;
+    border-radius: 14px;
+}
+
+a.link-menu.btn-menu:hover{
+    color: #000;
+}
+
+/* HOME */
+
+/* BANNER */
+
+section.banner {
+    display: block;
+    background-image: url("../images/banner-prin.png");
+}
+
+section.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/banner-prin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+}
+
+.banner h2 {
+    text-shadow: 2px 1px 2px black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: inherit;
+}
+
+.botones-banner {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: #bf6f0b;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 5px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    width: 166px;
+}
+
+/* CATEGORIAS */
+
+section.categorias {
+    flex-direction: column;
+}
+
+.categorias .cat {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias .cat {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.cat div {
+    margin: 0px 40px;
+    width: 28%;
+    text-align: center;
+}
+
+.cat div img{
+    width: 100%;
+}
+
+.categorias h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 0px 0px 33px 0px;
+}
+
+.cat h4 {
+    font-size: 35px;
+}
+
+.cat p {
+    margin-bottom: 40px;
+}
+
+.cat a.btn {
+    font-size: 18px;
+}
+
+
+/* NOSOTROS */
+
+section.nosotros {
+    background: #fff;
+}
+
+.nosotros h2, .nosotros p {
+    color: #000;
+}
+
+.nosotros div {
+    padding: 3rem;
+    width: 50%;
+}
+
+section.nosotros div p {
+    font-size: 20px;
+}
+
+
+/* GALERIA */
+
+.galeria div {
+    margin: 25px;
+}
+
+section.galeria {
+    flex-wrap: wrap;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4em;
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1250px) {
+    .nosotros div {
+        padding: 1rem;
+        width: 50%;
+    }
+  }
+
+
+
+  @media (max-width: 900px) {
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 1em 0.3em 2em 0.3em
+    }
+
+    .menu {
+        margin-top: 13px;
+    }
+
+    .menu nav a.link-menu {
+        margin: 0px 5px;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    a.link-menu.btn-menu {
+        padding: 10px 9px;
+    }
+
+    .logo h2 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font-size: 16px;
+        text-transform: none;
+    }
+
+    .cat div {
+        margin: 0px 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.nosotros {
+        background: #fff;
+        flex-direction: column-reverse;
+    }
+
+    .nosotros div {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .galeria div {
+        margin: 25px;
+        width: 100%;
+    }
+
+    .galeria iframe {
+        width: 100% !important;
+    }
+
+    .galeria h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+
+  }
